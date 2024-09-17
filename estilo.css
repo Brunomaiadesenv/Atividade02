@@ -1,0 +1,184 @@
+* { /* CSS RESET */
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #036464;
+    background-image: url(img/09.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    width: 960px;
+    height: 50px;
+    /*border: 1px solid #024d08;*/
+    background-color: #045f4b;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px rgba(212, 233, 225, 0.6);
+}
+
+/*INICIO MENU CSS*/
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+  
+}
+
+nav ul  li {
+    line-height: 50px;
+
+}
+
+nav ul li a {
+    color: #c4dad1;
+    font-weight: bolder;
+    font-family: consolas, arial, verdana;
+    font-size: 12pt;
+    text-shadow: 2px 2px 4px rgba(73, 119, 80, 0.685);
+}
+
+nav ul li a:hover {
+    font-size: 17pt;
+    border-bottom: 2px solid #add6b7;
+    transition: all, 0.3;
+}
+
+/* FIM MENU CSS */
+
+header {
+    width: 960px;
+    height: 250px;
+   /* border: 1px solid #024d08; */
+    background-color: #88c4a8f8;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px rgba(29, 143, 97, 0.6);
+    background-image: url(img/02.jpeg);
+    background-size: 960px 250px;
+    background-repeat: no-repeat;
+    background-position: center ;
+    animation-name: slide;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slide {
+    0% {background-image: url(img/03.jpeg);}
+    25% {background-image: url(img/04.jpg);}
+    50% {background-image: url(img/05.webp);}
+    75% {background-image: url(img/06.jpg);}
+    100% {background-image: url(img/07.webp);}
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 960px;
+    height: 600px;
+    /*border: 1px solid #024d08;*/
+    background-color: #0b7961;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px rgba(90, 110, 102, 0.6);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+section {
+    width: 350px;
+    height: 250px;
+    /*border: 1px solid #000;*/
+    background-color: #52d698ea;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px rgba(68, 88, 80, 0.6);
+}
+
+section img, iframe {
+    width: 350px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+aside {
+    width: 560px;
+    height: 250px;
+    /*border: 1px solid #000;*/
+    background-color: #97ad95;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px rgba(68, 88, 80, 0.6);
+}
+
+aside h2 {
+text-align: left;
+padding: 8px;
+font-family: consolas, arial, verdana;
+}
+
+aside p {
+text-align: justify;
+padding: 8px;
+font-family: 'Times New Roman', Times, serif;
+font-size: 11pt;
+text-indent: 5%;
+
+}
+
+
+#contato {
+    width: 560px;
+    height: 200px;
+    /*border: 1px solid #000;*/
+    background-color: #97ad95;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px rgba(68, 88, 80, 0.6);
+    margin: auto;
+    text-align: justify;
+    padding: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    text-indent: 0%;
+    
+}
+
+
+
+
+footer {
+    width: 960px;
+    height: 50px;
+    /*border: 1px solid #024d08;*/
+    background-color: #045f4b;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px rgba(68, 88, 80, 0.6);
+   }
+
+   footer p {
+    text-align: left;
+    line-height: 50px;
+    font-style: italic;
+    text-indent: 5%;
+
+   }
+
